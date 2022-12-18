@@ -17,7 +17,7 @@ jobs:
           yarn build
         env:
           GITHUB_PAGES: true
-      - usage: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
   deoloy:
